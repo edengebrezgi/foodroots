@@ -17,7 +17,7 @@
     <div class="page-header ">
       <% if (user.local.email) { %>
       <h2>Welcome
-        <%= user.local.email.slice(0,user.local.email.indexOf("@")) %>
+        <%= user.local.email.slice(0,user.local.email.indexOf("")) %>
         where would you like to eat?
       </h2>
 
@@ -71,15 +71,17 @@
           </div>
       </a>   <!-- next country here -->
         </div>
+        
         <div class="card">
           <img class="card-img-top"
             src="https://media.istockphoto.com/photos/fresh-fruits-and-vegetables-from-mexico-picture-id1125591423"
             alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Mexico</h5>
-
+            <!-- <h5 class="card-title">Mexico</h5> -->
+            <h5><a href="/mexico">Mexico</a></h5>
           </div>
         </div>
+     
       </div>
 
     

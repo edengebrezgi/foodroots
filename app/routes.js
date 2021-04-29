@@ -20,10 +20,10 @@ module.exports = function(app, passport, db) {
 
 
 
-
+// where costumer account is created and given a token.
     app.post("/charge", (req, res) => {
       try {
-        stripe.customers
+        stripe.customers 
           .create({
             name: req.body.name,
             email: req.body.email,
@@ -67,11 +67,22 @@ module.exports = function(app, passport, db) {
 
     app.get('/japan', isLoggedIn, function(req, res) {
       console.log('japan')
-      db.collection('japan').trim().find().toArray((err, result) => {
+      db.collection('japan1').find().toArray((err, result) => {
         console.log(result)
         if (err) return console.log(err)
         res.render('japan.ejs', {
           japan: result
+        })
+      })
+    });
+
+    app.get('/mexico', isLoggedIn, function(req, res) {
+      console.log('mexico')
+      db.collection('mexico').find().toArray((err, result) => {
+        console.log(result)
+        if (err) return console.log(err)
+        res.render('mexico.ejs', {
+          mexico: result
         })
       })
     });

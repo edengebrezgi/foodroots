@@ -8,9 +8,44 @@ body{
   background-image:url("img/cover.png");
   background-size: 100% 750px; 
   background-repeat: no-repeat;
+  background-position-x: -21vw;
 
   height: 700px;
 }
+
+.bg-gray-900 {
+    --bg-opacity: 1;
+    background-color: #ffca06 !important;
+}
+
+.bg-purple-900 {
+  --bg-opacity: 1;
+  background-color: rgb(184 43 133) !important;
+}
+
+.bg-purple-900 {
+  --bg-opacity: 1;
+  background-color: rgb(184 43 133) !important;
+}
+
+.InputElement.is-complete.Input {
+  color: rgb(5, 0, 0) !important;
+  background-color: rgb(163, 158, 158) !important;
+}
+
+.bg-transparent{
+  background-color: rgb(146, 144, 144);
+}
+
+.background.index{
+  background-image:url("img/cover.png");
+  background-size: 100% 750px; 
+  background-repeat: no-repeat;
+  height: 700px;
+  background-position: center;
+}
+
+
 img{
   height: 200px;
 }
