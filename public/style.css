@@ -1,12 +1,12 @@
 body{
   padding-top:80px;
   word-wrap:break-word;
-  background-color: rgb(239 199 16);
+  background-color: rgb(255 202 6);
 
 }
 .background{
   background-image:url("img/cover.png");
-  background-size: 100% 750px; 
+  background-size: 91% 591px; 
   background-repeat: no-repeat;
   background-position-x: -21vw;
 
@@ -23,9 +23,22 @@ body{
   background-color: rgb(184 43 133) !important;
 }
 
+.bg-blue-700 {
+  --bg-opacity: 1;
+  background-color: rgb(184 43 133) !important;
+  background-color: rgba(43,108,176,var(--bg-opacity));
+}
+
 .bg-purple-900 {
   --bg-opacity: 1;
   background-color: rgb(184 43 133) !important;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 42%;
 }
 
 .InputElement.is-complete.Input {
@@ -41,7 +54,7 @@ body{
   background-image:url("img/cover.png");
   background-size: 100% 750px; 
   background-repeat: no-repeat;
-  height: 700px;
+  height: 588px;
   background-position: center;
 }
 
@@ -54,10 +67,16 @@ img{
   display: none;
 }
 
-.col-sm-offset-3 {
-  margin-left: 50%;
-  margin-top: 446px;
+.h2, h2 {
+  font-size: 5rem;
+  color: #156d15;
 }
+
+.col-sm-offset-3 {
+  margin-left: 6%;
+  margin-top: 10%;
+}
+
 
 .container-fluid {
   width: 96%;
